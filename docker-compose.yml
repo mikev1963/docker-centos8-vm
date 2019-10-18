@@ -1,0 +1,11 @@
+version: '3'
+services:
+  centos8:
+    image: mikev1963/docker-centos8-vm
+    container_name: centos8
+    hostname: centos8
+    privileged: true
+    ports:
+      - '2222:22'
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup
